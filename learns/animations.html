@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Animation</title>
+			<style>
+				.animation {
+					animation-name: fire;
+					animation-duration: 5s;
+                    animation-iteration-count: infinite;
+				}
+				@keyframes fire {
+					0% {
+						background-color: #123;
+					}
+					50% {
+						background:linear-gradient(purple);
+					}
+					100% {
+						background-color: lightsalmon;
+					}
+				}
+                .animation img{
+                    margin: auto 50%;
+                    animation-name: fire;
+
+                }
+			</style>
+        </head>
+        <body class="animation">
+            <img src="C:/xampp/htdocs/mish/images/IMG_20180817_070944.jpg" width="40%" height="500hv">
+
+
+
+        </body>
+    </html>

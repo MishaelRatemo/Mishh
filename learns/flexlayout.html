@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flexbox Layout</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #ccc;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header,
+        .footer {
+            height: 3.4rem;
+            background: #777;
+            color: white;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            background: #999;
+            color: #000;
+        }
+
+        .main {
+            flex: 1;
+            background: #eee;
+        }
+
+        .sidebar {
+            width: 15 rem;
+            background: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">Header</header>
+    <main class="content">
+        <aside class="sidebar">Sidebar</aside>
+        <section class="main">Main Content</section>
+    </main>
+
+    <footer class="footer">Footer</footer>
+</body>
+
+</html>
